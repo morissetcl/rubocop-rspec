@@ -38,6 +38,8 @@ RSpec.describe RuboCop::Cop::RSpec::Focus do
                                     ^^^^^^^^^^^ Focused spec found.
       pending 'test', meta: true, focus: true do; end
                                   ^^^^^^^^^^^ Focused spec found.
+      skip 'test', meta: true, focus: true do; end
+                               ^^^^^^^^^^^ Focused spec found.
     RUBY
 
     expect_correction(<<-RUBY)
@@ -58,6 +60,7 @@ RSpec.describe RuboCop::Cop::RSpec::Focus do
       xfeature 'test', meta: true do; end
       xscenario 'test', meta: true do; end
       pending 'test', meta: true do; end
+      skip 'test', meta: true do; end
     RUBY
   end
 
@@ -97,6 +100,8 @@ RSpec.describe RuboCop::Cop::RSpec::Focus do
                  ^^^^^^ Focused spec found.
       pending 'test', :focus do; end
                       ^^^^^^ Focused spec found.
+      skip 'test', :focus do; end
+                   ^^^^^^ Focused spec found.
     RUBY
 
     expect_correction(<<-RUBY)
@@ -117,6 +122,7 @@ RSpec.describe RuboCop::Cop::RSpec::Focus do
       xcontext 'test' do; end
       it 'test' do; end
       pending 'test' do; end
+      skip 'test' do; end
     RUBY
   end
   # rubocop:enable RSpec/ExampleLength
