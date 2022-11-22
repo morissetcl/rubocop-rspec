@@ -167,6 +167,15 @@ RSpec.describe RuboCop::Cop::RSpec::Focus do
     RUBY
   end
 
+  it 'flags pending focused spec' do
+    expect_offense(<<-RUBY)
+    some_method "foo", focus: true do
+                       ^^^^^^^^^^^ Focused spec found.
+        pending
+      end
+    RUBY
+  end
+
   it 'flags focused block types' do # rubocop:disable RSpec/ExampleLength
     expect_offense(<<-RUBY)
       fdescribe 'test' do; end
