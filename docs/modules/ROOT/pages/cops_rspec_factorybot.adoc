@@ -189,6 +189,49 @@ create_list :user, 3
 
 * https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/CreateList
 
+== RSpec/FactoryBot/FactoryAssociationWithStrategy
+
+|===
+| Enabled by default | Safe | Supports autocorrection | Version Added | Version Changed
+
+| Enabled
+| Yes
+| No
+| <<next>>
+| -
+|===
+
+Use implicit, explicit or inline definition in factory association rather than hard coding a strategy.
+
+=== Examples
+
+[source,ruby]
+----
+# bad - only works for one strategy
+factory :foo do
+  profile { create(:profile) }
+end
+
+# good - implicit
+factory :foo do
+  profile
+end
+
+# good - explicit
+factory :foo do
+  association :profile
+end
+
+# good - inline
+factory :foo do
+  profile { association :profile }
+end
+----
+
+=== References
+
+* https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/FactoryAssociationWithStrategy
+
 == RSpec/FactoryBot/FactoryClassName
 
 |===

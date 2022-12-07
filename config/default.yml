@@ -115,32 +115,32 @@ Metrics/BlockLength:
 RSpec/AlignLeftLetBrace:
   Description: Checks that left braces for adjacent single line lets are aligned.
   Enabled: false
-  VersionAdded: '1.16'
+  VersionAdded: "1.16"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/AlignLeftLetBrace
 
 RSpec/AlignRightLetBrace:
   Description: Checks that right braces for adjacent single line lets are aligned.
   Enabled: false
-  VersionAdded: '1.16'
+  VersionAdded: "1.16"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/AlignRightLetBrace
 
 RSpec/AnyInstance:
   Description: Check that instances are not being stubbed globally.
   Enabled: true
-  VersionAdded: '1.4'
+  VersionAdded: "1.4"
   StyleGuide: https://rspec.rubystyle.guide/#any_instance_of
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/AnyInstance
 
 RSpec/AroundBlock:
   Description: Checks that around blocks actually run the test.
   Enabled: true
-  VersionAdded: '1.11'
+  VersionAdded: "1.11"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/AroundBlock
 
 RSpec/Be:
   Description: Check for expectations where `be` is used without argument.
   Enabled: true
-  VersionAdded: '1.25'
+  VersionAdded: "1.25"
   StyleGuide: https://rspec.rubystyle.guide/#be-matcher
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Be
 
@@ -149,15 +149,15 @@ RSpec/BeEq:
   Enabled: pending
   Safe: false
   VersionAdded: 2.9.0
-  VersionChanged: '2.16'
+  VersionChanged: "2.16"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/BeEq
 
 RSpec/BeEql:
   Description: Check for expectations where `be(...)` can replace `eql(...)`.
   Enabled: true
   Safe: false
-  VersionAdded: '1.7'
-  VersionChanged: '2.16'
+  VersionAdded: "1.7"
+  VersionChanged: "2.16"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/BeEql
 
 RSpec/BeNil:
@@ -178,15 +178,15 @@ RSpec/BeforeAfterAll:
     - spec/spec_helper.rb
     - spec/rails_helper.rb
     - spec/support/**/*.rb
-  VersionAdded: '1.12'
+  VersionAdded: "1.12"
   StyleGuide: https://rspec.rubystyle.guide/#avoid-hooks-with-context-scope
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/BeforeAfterAll
 
 RSpec/ChangeByZero:
   Description: Prefer negated matchers over `to change.by(0)`.
   Enabled: pending
-  VersionAdded: '2.11'
-  VersionChanged: '2.14'
+  VersionAdded: "2.11"
+  VersionChanged: "2.14"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ChangeByZero
   NegatedMatcher: ~
 
@@ -194,7 +194,7 @@ RSpec/ClassCheck:
   Description: Enforces consistent use of `be_a` or `be_kind_of`.
   StyleGuide: "#is-a-vs-kind-of"
   Enabled: pending
-  VersionAdded: '2.13'
+  VersionAdded: "2.13"
   EnforcedStyle: be_a
   SupportedStyles:
     - be_a
@@ -204,7 +204,7 @@ RSpec/ClassCheck:
 RSpec/ContextMethod:
   Description: "`context` should not be used for specifying methods."
   Enabled: true
-  VersionAdded: '1.36'
+  VersionAdded: "1.36"
   StyleGuide: https://rspec.rubystyle.guide/#example-group-naming
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ContextMethod
 
@@ -216,8 +216,8 @@ RSpec/ContextWording:
     - with
     - without
   AllowedPatterns: []
-  VersionAdded: '1.20'
-  VersionChanged: '2.13'
+  VersionAdded: "1.20"
+  VersionChanged: "2.13"
   StyleGuide: https://rspec.rubystyle.guide/#context-descriptions
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ContextWording
 
@@ -246,20 +246,20 @@ RSpec/DescribeClass:
       - mailbox
       - aruba
       - task
-  VersionAdded: '1.0'
-  VersionChanged: '2.7'
+  VersionAdded: "1.0"
+  VersionChanged: "2.7"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/DescribeClass
 
 RSpec/DescribeMethod:
   Description: Checks that the second argument to `describe` specifies a method.
   Enabled: true
-  VersionAdded: '1.0'
+  VersionAdded: "1.0"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/DescribeMethod
 
 RSpec/DescribeSymbol:
   Description: Avoid describing symbols.
   Enabled: true
-  VersionAdded: '1.15'
+  VersionAdded: "1.15"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/DescribeSymbol
 
 RSpec/DescribedClass:
@@ -271,70 +271,70 @@ RSpec/DescribedClass:
     - described_class
     - explicit
   SafeAutoCorrect: false
-  VersionAdded: '1.0'
-  VersionChanged: '1.11'
+  VersionAdded: "1.0"
+  VersionChanged: "1.11"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/DescribedClass
 
 RSpec/DescribedClassModuleWrapping:
   Description: Avoid opening modules and defining specs within them.
   Enabled: false
-  VersionAdded: '1.37'
+  VersionAdded: "1.37"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/DescribedClassModuleWrapping
 
 RSpec/Dialect:
   Description: Enforces custom RSpec dialects.
   Enabled: false
   PreferredMethods: {}
-  VersionAdded: '1.33'
+  VersionAdded: "1.33"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Dialect
 
 RSpec/DuplicatedMetadata:
   Description: Avoid duplicated metadata.
   Enabled: pending
-  VersionAdded: '2.16'
+  VersionAdded: "2.16"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/DuplicatedMetadata
 
 RSpec/EmptyExampleGroup:
   Description: Checks if an example group does not include any tests.
   Enabled: true
   SafeAutoCorrect: false
-  VersionAdded: '1.7'
-  VersionChanged: '2.13'
+  VersionAdded: "1.7"
+  VersionChanged: "2.13"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyExampleGroup
 
 RSpec/EmptyHook:
   Description: Checks for empty before and after hooks.
   Enabled: true
-  VersionAdded: '1.39'
+  VersionAdded: "1.39"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyHook
 
 RSpec/EmptyLineAfterExample:
   Description: Checks if there is an empty line after example blocks.
   Enabled: true
   AllowConsecutiveOneLiners: true
-  VersionAdded: '1.36'
+  VersionAdded: "1.36"
   StyleGuide: https://rspec.rubystyle.guide/#empty-lines-around-examples
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterExample
 
 RSpec/EmptyLineAfterExampleGroup:
   Description: Checks if there is an empty line after example group blocks.
   Enabled: true
-  VersionAdded: '1.27'
+  VersionAdded: "1.27"
   StyleGuide: https://rspec.rubystyle.guide/#empty-lines-between-describes
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterExampleGroup
 
 RSpec/EmptyLineAfterFinalLet:
   Description: Checks if there is an empty line after the last let block.
   Enabled: true
-  VersionAdded: '1.14'
+  VersionAdded: "1.14"
   StyleGuide: https://rspec.rubystyle.guide/#empty-line-after-let
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterFinalLet
 
 RSpec/EmptyLineAfterHook:
   Description: Checks if there is an empty line after hook blocks.
   Enabled: true
-  VersionAdded: '1.27'
-  VersionChanged: '2.13'
+  VersionAdded: "1.27"
+  VersionChanged: "2.13"
   StyleGuide: https://rspec.rubystyle.guide/#empty-line-after-let
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterHook
   AllowConsecutiveOneLiners: true
@@ -342,7 +342,7 @@ RSpec/EmptyLineAfterHook:
 RSpec/EmptyLineAfterSubject:
   Description: Checks if there is an empty line after subject block.
   Enabled: true
-  VersionAdded: '1.14'
+  VersionAdded: "1.14"
   StyleGuide: https://rspec.rubystyle.guide/#empty-line-after-let
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterSubject
 
@@ -351,8 +351,8 @@ RSpec/ExampleLength:
   Enabled: true
   Max: 5
   CountAsOne: []
-  VersionAdded: '1.5'
-  VersionChanged: '2.3'
+  VersionAdded: "1.5"
+  VersionChanged: "2.3"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ExampleLength
 
 RSpec/ExampleWithoutDescription:
@@ -363,7 +363,7 @@ RSpec/ExampleWithoutDescription:
     - always_allow
     - single_line_only
     - disallow
-  VersionAdded: '1.22'
+  VersionAdded: "1.22"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ExampleWithoutDescription
 
 RSpec/ExampleWording:
@@ -377,15 +377,15 @@ RSpec/ExampleWording:
   IgnoredWords: []
   DisallowedExamples:
     - works
-  VersionAdded: '1.0'
-  VersionChanged: '2.13'
+  VersionAdded: "1.0"
+  VersionChanged: "2.13"
   StyleGuide: https://rspec.rubystyle.guide/#should-in-example-docstrings
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ExampleWording
 
 RSpec/ExcessiveDocstringSpacing:
   Description: Checks for excessive whitespace in example descriptions.
   Enabled: pending
-  VersionAdded: '2.5'
+  VersionAdded: "2.5"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ExcessiveDocstringSpacing
 
 RSpec/ExpectActual:
@@ -393,7 +393,7 @@ RSpec/ExpectActual:
   Enabled: true
   Exclude:
     - spec/routing/**/*
-  VersionAdded: '1.7'
+  VersionAdded: "1.7"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ExpectActual
 
 RSpec/ExpectChange:
@@ -404,20 +404,20 @@ RSpec/ExpectChange:
     - method_call
     - block
   SafeAutoCorrect: false
-  VersionAdded: '1.22'
-  VersionChanged: '2.5'
+  VersionAdded: "1.22"
+  VersionChanged: "2.5"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ExpectChange
 
 RSpec/ExpectInHook:
   Description: Do not use `expect` in hooks such as `before`.
   Enabled: true
-  VersionAdded: '1.16'
+  VersionAdded: "1.16"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ExpectInHook
 
 RSpec/ExpectOutput:
   Description: Checks for opportunities to use `expect { ... }.to output`.
   Enabled: true
-  VersionAdded: '1.10'
+  VersionAdded: "1.10"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ExpectOutput
 
 RSpec/FilePath:
@@ -431,15 +431,15 @@ RSpec/FilePath:
     RSpec: rspec
   IgnoreMethods: false
   SpecSuffixOnly: false
-  VersionAdded: '1.2'
-  VersionChanged: '1.40'
+  VersionAdded: "1.2"
+  VersionChanged: "1.40"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FilePath
 
 RSpec/Focus:
   Description: Checks if examples are focused.
   Enabled: true
-  VersionAdded: '1.5'
-  VersionChanged: '2.1'
+  VersionAdded: "1.5"
+  VersionChanged: "2.1"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Focus
 
 RSpec/HookArgument:
@@ -450,26 +450,26 @@ RSpec/HookArgument:
     - implicit
     - each
     - example
-  VersionAdded: '1.7'
+  VersionAdded: "1.7"
   StyleGuide: https://rspec.rubystyle.guide/#redundant-beforeeach
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/HookArgument
 
 RSpec/HooksBeforeExamples:
   Description: Checks for before/around/after hooks that come after an example.
   Enabled: true
-  VersionAdded: '1.29'
+  VersionAdded: "1.29"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/HooksBeforeExamples
 
 RSpec/IdenticalEqualityAssertion:
   Description: Checks for equality assertions with identical expressions on both sides.
   Enabled: pending
-  VersionAdded: '2.4'
+  VersionAdded: "2.4"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/IdenticalEqualityAssertion
 
 RSpec/ImplicitBlockExpectation:
   Description: Check that implicit block expectation syntax is not used.
   Enabled: true
-  VersionAdded: '1.35'
+  VersionAdded: "1.35"
   StyleGuide: https://rspec.rubystyle.guide/#implicit-block-expectations
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ImplicitBlockExpectation
 
@@ -480,7 +480,7 @@ RSpec/ImplicitExpect:
   SupportedStyles:
     - is_expected
     - should
-  VersionAdded: '1.8'
+  VersionAdded: "1.8"
   StyleGuide: https://rspec.rubystyle.guide/#use-expect
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ImplicitExpect
 
@@ -493,22 +493,22 @@ RSpec/ImplicitSubject:
     - single_statement_only
     - disallow
     - require_implicit
-  VersionAdded: '1.29'
-  VersionChanged: '2.13'
+  VersionAdded: "1.29"
+  VersionChanged: "2.13"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ImplicitSubject
 
 RSpec/InstanceSpy:
   Description: Checks for `instance_double` used with `have_received`.
   Enabled: true
-  VersionAdded: '1.12'
+  VersionAdded: "1.12"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/InstanceSpy
 
 RSpec/InstanceVariable:
   Description: Checks for instance variable usage in specs.
   Enabled: true
   AssignmentOnly: false
-  VersionAdded: '1.0'
-  VersionChanged: '1.7'
+  VersionAdded: "1.0"
+  VersionChanged: "1.7"
   StyleGuide: https://rspec.rubystyle.guide/#instance-variables
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/InstanceVariable
 
@@ -519,47 +519,47 @@ RSpec/ItBehavesLike:
   SupportedStyles:
     - it_behaves_like
     - it_should_behave_like
-  VersionAdded: '1.13'
+  VersionAdded: "1.13"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ItBehavesLike
 
 RSpec/IteratedExpectation:
   Description: Check that `all` matcher is used instead of iterating over an array.
   Enabled: true
-  VersionAdded: '1.14'
+  VersionAdded: "1.14"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/IteratedExpectation
 
 RSpec/LeadingSubject:
   Description: Enforce that subject is the first definition in the test.
   Enabled: true
-  VersionAdded: '1.7'
-  VersionChanged: '1.14'
+  VersionAdded: "1.7"
+  VersionChanged: "1.14"
   StyleGuide: https://rspec.rubystyle.guide/#leading-subject
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/LeadingSubject
 
 RSpec/LeakyConstantDeclaration:
   Description: Checks that no class, module, or constant is declared.
   Enabled: true
-  VersionAdded: '1.35'
+  VersionAdded: "1.35"
   StyleGuide: https://rspec.rubystyle.guide/#declare-constants
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/LeakyConstantDeclaration
 
 RSpec/LetBeforeExamples:
   Description: Checks for `let` definitions that come after an example.
   Enabled: true
-  VersionAdded: '1.16'
-  VersionChanged: '1.22'
+  VersionAdded: "1.16"
+  VersionChanged: "1.22"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/LetBeforeExamples
 
 RSpec/LetSetup:
   Description: Checks unreferenced `let!` calls being used for test setup.
   Enabled: true
-  VersionAdded: '1.7'
+  VersionAdded: "1.7"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/LetSetup
 
 RSpec/MessageChain:
   Description: Check that chains of messages are not being stubbed.
   Enabled: true
-  VersionAdded: '1.7'
+  VersionAdded: "1.7"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MessageChain
 
 RSpec/MessageExpectation:
@@ -569,8 +569,8 @@ RSpec/MessageExpectation:
   SupportedStyles:
     - allow
     - expect
-  VersionAdded: '1.7'
-  VersionChanged: '1.8'
+  VersionAdded: "1.7"
+  VersionChanged: "1.8"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MessageExpectation
 
 RSpec/MessageSpies:
@@ -580,27 +580,27 @@ RSpec/MessageSpies:
   SupportedStyles:
     - have_received
     - receive
-  VersionAdded: '1.9'
+  VersionAdded: "1.9"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MessageSpies
 
 RSpec/MissingExampleGroupArgument:
   Description: Checks that the first argument to an example group is not empty.
   Enabled: true
-  VersionAdded: '1.28'
+  VersionAdded: "1.28"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MissingExampleGroupArgument
 
 RSpec/MultipleDescribes:
   Description: Checks for multiple top-level example groups.
   Enabled: true
-  VersionAdded: '1.0'
+  VersionAdded: "1.0"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MultipleDescribes
 
 RSpec/MultipleExpectations:
   Description: Checks if examples contain too many `expect` calls.
   Enabled: true
   Max: 1
-  VersionAdded: '1.7'
-  VersionChanged: '1.21'
+  VersionAdded: "1.7"
+  VersionChanged: "1.21"
   StyleGuide: https://rspec.rubystyle.guide/#expectation-per-example
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MultipleExpectations
 
@@ -609,14 +609,14 @@ RSpec/MultipleMemoizedHelpers:
   Enabled: true
   AllowSubject: true
   Max: 5
-  VersionAdded: '1.43'
+  VersionAdded: "1.43"
   StyleGuide: https://rspec.rubystyle.guide/#let-blocks
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MultipleMemoizedHelpers
 
 RSpec/MultipleSubjects:
   Description: Checks if an example group defines `subject` multiple times.
   Enabled: true
-  VersionAdded: '1.16'
+  VersionAdded: "1.16"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MultipleSubjects
 
 RSpec/NamedSubject:
@@ -628,7 +628,7 @@ RSpec/NamedSubject:
     - named_only
   IgnoreSharedExamples: true
   VersionAdded: 1.5.3
-  VersionChanged: '2.15'
+  VersionChanged: "2.15"
   StyleGuide: https://rspec.rubystyle.guide/#use-subject
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/NamedSubject
 
@@ -637,16 +637,16 @@ RSpec/NestedGroups:
   Enabled: true
   Max: 3
   AllowedGroups: []
-  VersionAdded: '1.7'
-  VersionChanged: '2.13'
+  VersionAdded: "1.7"
+  VersionChanged: "2.13"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/NestedGroups
 
 RSpec/NoExpectationExample:
   Description: Checks if an example contains any expectation.
   Enabled: pending
   Safe: false
-  VersionAdded: '2.13'
-  VersionChanged: '2.14'
+  VersionAdded: "2.13"
+  VersionChanged: "2.14"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/NoExpectationExample
   AllowedPatterns:
     - "^expect_"
@@ -659,25 +659,25 @@ RSpec/NotToNot:
   SupportedStyles:
     - not_to
     - to_not
-  VersionAdded: '1.4'
+  VersionAdded: "1.4"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/NotToNot
 
 RSpec/OverwritingSetup:
   Description: Checks if there is a let/subject that overwrites an existing one.
   Enabled: true
-  VersionAdded: '1.14'
+  VersionAdded: "1.14"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/OverwritingSetup
 
 RSpec/Pending:
   Description: Checks for any pending or skipped examples.
   Enabled: false
-  VersionAdded: '1.25'
+  VersionAdded: "1.25"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Pending
 
 RSpec/PendingWithoutReason:
   Description: Checks for pending or skipped examples without reason.
   Enabled: pending
-  VersionAdded: '2.16'
+  VersionAdded: "2.16"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/PendingWithoutReason
 
 RSpec/PredicateMatcher:
@@ -690,50 +690,50 @@ RSpec/PredicateMatcher:
     - inflected
     - explicit
   SafeAutoCorrect: false
-  VersionAdded: '1.16'
+  VersionAdded: "1.16"
   StyleGuide: https://rspec.rubystyle.guide/#predicate-matchers
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/PredicateMatcher
 
 RSpec/ReceiveCounts:
   Description: Check for `once` and `twice` receive counts matchers usage.
   Enabled: true
-  VersionAdded: '1.26'
+  VersionAdded: "1.26"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ReceiveCounts
 
 RSpec/ReceiveNever:
   Description: Prefer `not_to receive(...)` over `receive(...).never`.
   Enabled: true
-  VersionAdded: '1.28'
+  VersionAdded: "1.28"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ReceiveNever
 
 RSpec/RepeatedDescription:
   Description: Check for repeated description strings in example groups.
   Enabled: true
-  VersionAdded: '1.9'
+  VersionAdded: "1.9"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/RepeatedDescription
 
 RSpec/RepeatedExample:
   Description: Check for repeated examples within example groups.
   Enabled: true
-  VersionAdded: '1.10'
+  VersionAdded: "1.10"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/RepeatedExample
 
 RSpec/RepeatedExampleGroupBody:
   Description: Check for repeated describe and context block body.
   Enabled: true
-  VersionAdded: '1.38'
+  VersionAdded: "1.38"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/RepeatedExampleGroupBody
 
 RSpec/RepeatedExampleGroupDescription:
   Description: Check for repeated example group descriptions.
   Enabled: true
-  VersionAdded: '1.38'
+  VersionAdded: "1.38"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/RepeatedExampleGroupDescription
 
 RSpec/RepeatedIncludeExample:
   Description: Check for repeated include of shared examples.
   Enabled: true
-  VersionAdded: '1.44'
+  VersionAdded: "1.44"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/RepeatedIncludeExample
 
 RSpec/ReturnFromStub:
@@ -743,72 +743,72 @@ RSpec/ReturnFromStub:
   SupportedStyles:
     - and_return
     - block
-  VersionAdded: '1.16'
-  VersionChanged: '1.22'
+  VersionAdded: "1.16"
+  VersionChanged: "1.22"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ReturnFromStub
 
 RSpec/ScatteredLet:
   Description: Checks for let scattered across the example group.
   Enabled: true
-  VersionAdded: '1.14'
-  VersionChanged: '1.39'
+  VersionAdded: "1.14"
+  VersionChanged: "1.39"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ScatteredLet
 
 RSpec/ScatteredSetup:
   Description: Checks for setup scattered across multiple hooks in an example group.
   Enabled: true
-  VersionAdded: '1.10'
+  VersionAdded: "1.10"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ScatteredSetup
 
 RSpec/SharedContext:
   Description: Checks for proper shared_context and shared_examples usage.
   Enabled: true
-  VersionAdded: '1.13'
+  VersionAdded: "1.13"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/SharedContext
 
 RSpec/SharedExamples:
   Description: Enforces use of string to titleize shared examples.
   Enabled: true
-  VersionAdded: '1.25'
+  VersionAdded: "1.25"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/SharedExamples
 
 RSpec/SingleArgumentMessageChain:
   Description: Checks that chains of messages contain more than one element.
   Enabled: true
-  VersionAdded: '1.9'
-  VersionChanged: '1.10'
+  VersionAdded: "1.9"
+  VersionChanged: "1.10"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/SingleArgumentMessageChain
 
 RSpec/SortMetadata:
   Description: Sort RSpec metadata alphabetically.
   Enabled: pending
-  VersionAdded: '2.14'
+  VersionAdded: "2.14"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/SortMetadata
 
 RSpec/StubbedMock:
   Description: Checks that message expectations do not have a configured response.
   Enabled: true
-  VersionAdded: '1.44'
+  VersionAdded: "1.44"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/StubbedMock
 
 RSpec/SubjectDeclaration:
   Description: Ensure that subject is defined using subject helper.
   Enabled: pending
-  VersionAdded: '2.5'
+  VersionAdded: "2.5"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/SubjectDeclaration
 
 RSpec/SubjectStub:
   Description: Checks for stubbed test subjects.
   Enabled: true
-  VersionAdded: '1.7'
-  VersionChanged: '2.8'
+  VersionAdded: "1.7"
+  VersionChanged: "2.8"
   StyleGuide: https://rspec.rubystyle.guide/#dont-stub-subject
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/SubjectStub
 
 RSpec/UnspecifiedException:
   Description: Checks for a specified error in checking raised errors.
   Enabled: true
-  VersionAdded: '1.30'
+  VersionAdded: "1.30"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/UnspecifiedException
 
 RSpec/VariableDefinition:
@@ -818,7 +818,7 @@ RSpec/VariableDefinition:
   SupportedStyles:
     - symbols
     - strings
-  VersionAdded: '1.40'
+  VersionAdded: "1.40"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/VariableDefinition
 
 RSpec/VariableName:
@@ -829,8 +829,8 @@ RSpec/VariableName:
     - snake_case
     - camelCase
   AllowedPatterns: []
-  VersionAdded: '1.40'
-  VersionChanged: '2.13'
+  VersionAdded: "1.40"
+  VersionChanged: "2.13"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/VariableName
 
 RSpec/VerifiedDoubleReference:
@@ -842,7 +842,7 @@ RSpec/VerifiedDoubleReference:
     - constant
     - string
   VersionAdded: 2.10.0
-  VersionChanged: '2.12'
+  VersionChanged: "2.12"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/VerifiedDoubleReference
 
 RSpec/VerifiedDoubles:
@@ -851,20 +851,20 @@ RSpec/VerifiedDoubles:
   IgnoreNameless: true
   IgnoreSymbolicNames: false
   VersionAdded: 1.2.1
-  VersionChanged: '1.5'
+  VersionChanged: "1.5"
   StyleGuide: https://rspec.rubystyle.guide/#doubles
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/VerifiedDoubles
 
 RSpec/VoidExpect:
   Description: Checks void `expect()`.
   Enabled: true
-  VersionAdded: '1.16'
+  VersionAdded: "1.16"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/VoidExpect
 
 RSpec/Yield:
   Description: Checks for calling a block within a stub.
   Enabled: true
-  VersionAdded: '1.32'
+  VersionAdded: "1.32"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Yield
 
 RSpec/Capybara:
@@ -875,16 +875,16 @@ RSpec/Capybara:
 RSpec/Capybara/CurrentPathExpectation:
   Description: Checks that no expectations are set on Capybara's `current_path`.
   Enabled: true
-  VersionAdded: '1.18'
-  VersionChanged: '2.0'
+  VersionAdded: "1.18"
+  VersionChanged: "2.0"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/CurrentPathExpectation
 
 RSpec/Capybara/FeatureMethods:
   Description: Checks for consistent method usage in feature specs.
   Enabled: true
   EnabledMethods: []
-  VersionAdded: '1.17'
-  VersionChanged: '2.0'
+  VersionAdded: "1.17"
+  VersionChanged: "2.0"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/FeatureMethods
 
 RSpec/Capybara/MatchStyle:
@@ -896,7 +896,7 @@ RSpec/Capybara/MatchStyle:
 RSpec/Capybara/NegationMatcher:
   Description: Enforces use of `have_no_*` or `not_to` for negated expectations.
   Enabled: pending
-  VersionAdded: '2.14'
+  VersionAdded: "2.14"
   EnforcedStyle: not_to
   SupportedStyles:
     - have_no
@@ -906,26 +906,26 @@ RSpec/Capybara/NegationMatcher:
 RSpec/Capybara/SpecificActions:
   Description: Checks for there is a more specific actions offered by Capybara.
   Enabled: pending
-  VersionAdded: '2.14'
+  VersionAdded: "2.14"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/SpecificActions
 
 RSpec/Capybara/SpecificFinders:
   Description: Checks if there is a more specific finder offered by Capybara.
   Enabled: pending
-  VersionAdded: '2.13'
+  VersionAdded: "2.13"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/SpecificFinders
 
 RSpec/Capybara/SpecificMatcher:
   Description: Checks for there is a more specific matcher offered by Capybara.
   Enabled: pending
-  VersionAdded: '2.12'
+  VersionAdded: "2.12"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/SpecificMatcher
 
 RSpec/Capybara/VisibilityMatcher:
   Description: Checks for boolean visibility in Capybara finders.
   Enabled: true
-  VersionAdded: '1.39'
-  VersionChanged: '2.0'
+  VersionAdded: "1.39"
+  VersionChanged: "2.0"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/VisibilityMatcher
 
 RSpec/FactoryBot:
@@ -940,8 +940,8 @@ RSpec/FactoryBot/AttributeDefinedStatically:
     - spec/factories.rb
     - spec/factories/**/*.rb
     - features/support/factories/**/*.rb
-  VersionAdded: '1.28'
-  VersionChanged: '2.0'
+  VersionAdded: "1.28"
+  VersionChanged: "2.0"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/AttributeDefinedStatically
 
 RSpec/FactoryBot/ConsistentParenthesesStyle:
@@ -951,7 +951,7 @@ RSpec/FactoryBot/ConsistentParenthesesStyle:
   SupportedStyles:
     - require_parentheses
     - omit_parentheses
-  VersionAdded: '2.14'
+  VersionAdded: "2.14"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/ConsistentParenthesesStyle
 
 RSpec/FactoryBot/CreateList:
@@ -967,9 +967,17 @@ RSpec/FactoryBot/CreateList:
   SupportedStyles:
     - create_list
     - n_times
-  VersionAdded: '1.25'
-  VersionChanged: '2.0'
+  VersionAdded: "1.25"
+  VersionChanged: "2.0"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/CreateList
+
+RSpec/FactoryBot/FactoryAssociationWithStrategy:
+  Description:
+    Use implicit, explicit or inline definition in factory association
+    rather than hard coding a strategy.
+  Enabled: pending
+  VersionAdded: "<<next>>"
+  Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/FactoryAssociationWithStrategy
 
 RSpec/FactoryBot/FactoryClassName:
   Description: Use string value when setting the class attribute explicitly.
@@ -978,14 +986,14 @@ RSpec/FactoryBot/FactoryClassName:
     - spec/factories.rb
     - spec/factories/**/*.rb
     - features/support/factories/**/*.rb
-  VersionAdded: '1.37'
-  VersionChanged: '2.0'
+  VersionAdded: "1.37"
+  VersionChanged: "2.0"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/FactoryClassName
 
 RSpec/FactoryBot/FactoryNameStyle:
   Description: Checks for name style for argument of FactoryBot::Syntax::Methods.
   Enabled: pending
-  VersionAdded: '2.16'
+  VersionAdded: "2.16"
   EnforcedStyle: symbol
   SupportedStyles:
     - symbol
@@ -996,7 +1004,7 @@ RSpec/FactoryBot/SyntaxMethods:
   Description: Use shorthands from `FactoryBot::Syntax::Methods` in your specs.
   Enabled: pending
   SafeAutoCorrect: false
-  VersionAdded: '2.7'
+  VersionAdded: "2.7"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/SyntaxMethods
 
 RSpec/Rails:
@@ -1007,14 +1015,14 @@ RSpec/Rails:
 RSpec/Rails/AvoidSetupHook:
   Description: Checks that tests use RSpec `before` hook over Rails `setup` method.
   Enabled: pending
-  VersionAdded: '2.4'
+  VersionAdded: "2.4"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Rails/AvoidSetupHook
 
 RSpec/Rails/HaveHttpStatus:
   Description: Checks that tests use `have_http_status` instead of equality matchers.
   Enabled: pending
   SafeAutoCorrect: false
-  VersionAdded: '2.12'
+  VersionAdded: "2.12"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Rails/HaveHttpStatus
 
 RSpec/Rails/HttpStatus:
@@ -1024,15 +1032,15 @@ RSpec/Rails/HttpStatus:
   SupportedStyles:
     - numeric
     - symbolic
-  VersionAdded: '1.23'
-  VersionChanged: '2.0'
+  VersionAdded: "1.23"
+  VersionChanged: "2.0"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Rails/HttpStatus
 
 RSpec/Rails/InferredSpecType:
   Description: Identifies redundant spec type.
   Enabled: pending
   Safe: false
-  VersionAdded: '2.14'
+  VersionAdded: "2.14"
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Rails/InferredSpecType
   Inferences:
     channels: channel

@@ -132,6 +132,8 @@ RSpec/NoExpectationExample:
   Enabled: true
 RSpec/PendingWithoutReason:
   Enabled: true
+RSpec/FactoryBot/FactoryAssociationWithStrategy:
+  Enabled: pending
 RSpec/SortMetadata:
   Enabled: true
 RSpec/SubjectDeclaration:
